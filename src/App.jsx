@@ -13,7 +13,7 @@ function App() {
         <p>
           <button type="button" onClick={() => {
             setCount((count) => count + 1);
-            umami.trackEvent('Count Button Click', { type: 'button-click' } );
+            window.umami.trackEvent('Count Button Click', { type: 'button-click' } );
           }}>
             count is: {count}
           </button>
